@@ -1,0 +1,129 @@
+html{
+    font-family: 'Josefin Sans', 'Open Sans','Source Sans Pro', sans-serif;
+    overflow: scroll;
+    
+}
+#projeto{
+    width: 375px;
+    
+}
+.logo-section{
+    width: 375px;
+    margin: 40px 0 40px 40px;
+}
+.img-mobile{
+    width: 100%;
+}
+.img-desk{
+    display: none;
+}
+.main-section{
+    font-size: 16px;
+    text-align: center;
+}
+.main-section h1{
+    font-size: 46px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color:  hsl(0, 93%, 68%);
+    
+}
+.main-section span{
+    color: hsl(0, 6%, 24%);
+    font-weight:600;
+}
+.main-section p{
+    margin-left: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    color:  hsl(0, 93%, 68%);
+}
+.formLogin{
+    display: flex;
+    margin: 50px 0px 50px 30px;
+}
+.formLogin div{
+    display: flex;
+    width: 85px;
+    height: 55px;
+    margin-left: -70px;
+    border-radius: 30px;
+    background:   hsl(0, 93%, 68%);
+    background: linear-gradient 135deg( from hsl(0, 0%, 100%), to hsl(0, 100%, 98%),  from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+}
+.btn{
+    margin: auto;
+}
+.formInput{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 35px;
+    border: solid 2px  hsl(0, 93%, 68%);
+}
+.formInput::placeholder {
+    padding: 15px ;
+    color: hsl(0, 93%, 68%);
+}
+.formInput:invalid{
+    border: solid 2px  hsl(0, 93%, 68%);
+}
+
+@media screen and (min-width: 1440px){
+    #projeto{
+        width: 1440px;
+    }
+    html{
+        overflow: hidden;
+    }
+    body{
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .logo-section{
+        float: left;
+    }
+    .logo-section img{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    .img-desk{
+        width: 45%;
+        margin-top: -32px;
+        margin-right: -80px;
+        overflow: hidden;
+        float: right;
+        display: block;
+      
+    }
+    .img-mobile{
+        display: none;
+    }
+    .main-section{
+        display: flex;
+    }
+    .main-section h1{
+        text-align: left;
+        margin-left: -273px;
+        margin-top: 200px;
+    }
+    .main-section p{
+        text-align: left;
+        line-height: 2;
+        width: 400px;
+        margin-left: -235px;
+        margin-top: 380px;
+    }
+    .formInput{
+        width: 50%;
+        margin-left: 100px;
+    }
+
+}
